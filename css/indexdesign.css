@@ -1,0 +1,427 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: Dimgrey;
+    margin: 0;
+}
+
+p {
+    font-family: "Noto Serif", serif;
+    font-size: 1rem;
+}
+
+h1 {
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 800;
+    color: black;
+    line-height: 1;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+}
+
+span {
+    background-color: black;
+}
+
+span:after {
+    content: " ";
+    padding-right: .5vw;
+}
+
+/* Navigation */
+
+
+#mini_menu,
+#main_menu {
+
+    font-family: "Roboto", sans-serif;
+  
+    font-weight: 400;
+    display: flex;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#mini_menu {
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 10vh;
+}
+
+ul {
+    display: flex;
+}
+
+#mini_menu .Logo {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.mini {
+    margin-right: 10px;
+}
+
+#main_menu .Logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+#main_menu {
+    justify-content: space-between;
+    margin: 0 5%;
+    height: 15vh;
+}
+
+#main_menu .nav_links {
+    display: flex;
+    flex-flow: row;
+    
+}
+li {
+    display: block;
+    background-color: black;
+    padding: 1rem;
+}
+
+.subMenu{
+    display:none;
+}
+.mini:hover ul {
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 4;
+}
+
+
+/* Image Section */
+#image_section {
+    position: relative;
+    height: 55vh;
+}
+
+#image_section img {
+    position: absolute;
+    width: 55%;
+}
+
+.first {
+    top: 5%;
+    left: 5vw;
+    z-index: -2;
+    rotate: -3deg;
+}
+
+.second {
+    left: 20%;
+    z-index: 0;
+    top: 50%;
+    rotate: 2deg;
+}
+
+.third {
+    top: 15%;
+    z-index: -1;
+    right: 5vw;
+    rotate: 3deg;
+}
+
+
+
+/* About Section  */
+#about {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: whitesmoke;
+    border: 8px solid black;
+    border-radius: 30px;
+    padding: 3vw;
+    margin: 5%;
+    gap: 15px;
+}
+
+#about h2 {
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+#about h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#about p {
+    margin-bottom: 50px;
+}
+
+#about_image {
+    height: 20vh;
+    margin: 0 3vw;
+}
+
+#about .icon {
+    width: 100px;
+    z-index: 2;
+    position: absolute;
+    left: 45%;
+    bottom: -50px;
+    rotate: -10deg;
+}
+
+#about_header {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-bottom: 15px;
+}
+
+/* Project Section */
+#projects {
+    padding: 3vw;
+    margin: 10% 5%;
+    border: 8px solid black;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+}
+#projectTitle{
+    margin: 0 auto 15px;
+}
+
+.project_hold {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    gap: 2rem;
+}
+
+.projectContainer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+border-bottom: 2px solid black;
+border-right:  2px solid black;
+border-radius: 10px 0;
+}
+
+.projectContainer img {
+    display: none;
+}
+.projectContainer p {
+   padding:.5rem;
+}
+.projectContainer h3 {
+   margin: 0 auto;
+   text-align: center;
+ }
+ 
+
+h4 {
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Noto Serif", serif;
+    font-size: 1rem;
+}
+
+/* contact section  */
+#contact{
+    padding: 3vw;
+    margin: 10% 5%;
+    border: 8px solid black;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    position: relative; 
+    gap: 1rem;
+}
+#contact a:link{
+    color: black;
+}
+#contact a:visited{
+    color: black;
+}
+.title{
+    margin: 0 auto;
+}
+
+.contact-info-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+/* footer  */
+footer {
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.foot.nav_links {
+    flex-flow: row;
+    align-items: center;
+justify-content: space-around;
+
+}
+.foot.nav_links li {
+    margin: 2vw;
+}
+
+/* Links */
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+   color: gainsboro;
+}
+
+a:hover,
+a:focus {
+
+    background-color: dimgrey;
+   
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 950px) {
+    #mini_menu {
+        display: flew;
+    }
+
+    #main_menu {
+        display: none;
+    }
+    #image_section img {
+        max-width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .foot.nav_links {
+        flex-flow: column;
+        align-items: center;
+
+    }
+
+   
+
+}
+
+@media screen and (min-width: 950px) {
+    #mini_menu {
+        display: none;
+    }
+
+    #main_menu {
+        display: flex;
+        align-items: end;
+    }
+
+    #about {
+        width: 25%;
+        max-width: 200px;
+        margin: 1% 5% 5vh;
+    }
+    #about h2 {
+        font-size: 1.5rem;
+        margin: 0 ;
+    }
+
+    #about_header {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: 5%;
+        margin-bottom: 15px;
+    }
+    #about_header h2 {
+        font-size: 2rem;
+    }
+
+    #about_header img {
+      margin-bottom: 15px;
+    }
+
+    #about .icon {
+        top: 35%;
+        left: 85%;
+    }
+
+    #image_section {
+        height: 1px;
+    }
+
+    #image_section img {
+        position: absolute;
+        max-width: 500px;
+    }
+
+    .first {
+        top: 5vh;
+        left: 30vw;
+    }
+    
+    .second {
+        left: 35vw;
+        top: 50vh;
+    }
+    
+    .third {
+        top: 15vh;
+        right: 10vw;
+    }
+   
+    .project_hold {
+        display: flex;
+        flex-flow: row nowrap;
+        align-content: center;
+        gap: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 1500px) {
+    #image_section img {
+        position: absolute;
+        max-width: 700px;
+    }
+   
+
+}

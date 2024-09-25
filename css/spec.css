@@ -1,0 +1,161 @@
+* {
+    z-index: 0;
+
+}
+
+body {
+    background-color: rgb(184, 115, 11);
+    margin: 0;
+}
+
+p {
+    font-family: "Noto Serif", serif;
+    font-size: 1rem;
+
+}
+
+h1 {
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: white;
+    margin: 5vh 0 0 4vw;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 900;
+    color: black;
+    line-height: 1;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+}
+
+span {
+    background-color: black;
+}
+
+span:after {
+    content: " ";
+    padding-right: .5vw;
+}
+
+
+#floater>img {
+    width: 35vw;
+}
+
+#rightText {
+    width: 25vw;
+    float: right;
+    margin: 1vh 5vw 0 4vw;
+    color: white;
+}
+
+.back {
+    position: absolute;
+    width: 40vw;
+}
+
+.first {
+    top: 3vh;
+    left: 30vw;
+    z-index: -2;
+}
+
+.second {
+    right: 5vw;
+    top: 50vh;
+    z-index: -1;
+    scale: 1.25;
+    rotate: 3deg;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.third {
+    left: 20vw;
+    top: 67vh;
+    z-index: -1;
+    rotate: 3deg;
+}
+
+
+
+#leftBar {
+    background-color: white;
+    margin: 1vh 0px 0 5vw;
+    width: 17vw;
+    border: 8px solid black;
+
+    padding: 1.5vw;
+}
+
+#leftBar h2 {
+    font-size: 2.5rem;
+}
+
+#leftBar h3 {
+    font-size: 1.5rem;
+}
+
+#leftBar img {
+    width: 9vw;
+}
+
+
+#main {
+    border: 2px solid black;
+}
+
+#leftBar .icon {
+    z-index: 1;
+    position: absolute;
+    left: 21vw;
+    top: 30vh;
+    rotate: -10deg;
+}
+
+#bottomBar {
+    margin: 2vh 0 4vh 2vh;
+    border: 8px solid black;
+    background-color: white;
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+.other {
+    flex: 0 1 20vw;
+    padding: 0 1vw;
+    margin: 1vh 0;
+    border-right: 2px solid black;
+}
+
+.other.last {
+    border: 0;
+}
+
+#barTitle {
+    flex: 1 1 5px;
+    display: flex;
+    flex-flow: column;
+    background-color: black;
+    color: white;
+    justify-items: end;
+    justify-content: flex-end;
+}
+
+#barTitle h4 {
+    text-align: right;
+    rotate: 90deg;
+    font-family: "Noto Serif", serif;
+    font-size: 1.2rem;
+}
